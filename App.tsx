@@ -14,7 +14,7 @@ export default function App() {
             <Stack.Screen name="Login" options={{headerShown:false}}>
             {(props) => <LoginScreen {...props} />}
             </Stack.Screen>
-            <Stack.Screen name='Home' component={HomeScreen} />
+            <Stack.Screen name='Home' component={HomeScreen} options={{headerShown:false}} />
             <Stack.Screen name='Register' options={{headerShown:false}}>
               {(props) => <RegisterScreen {...props} />}
             </Stack.Screen>

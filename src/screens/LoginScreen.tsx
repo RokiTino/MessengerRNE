@@ -56,7 +56,7 @@ const handleSubmit = () => {
         <View style={styles.hero}>
             <Image source={logo} style={styles.hero} />
         </View>
-
+        <Text style={styles.title}>Welcome</Text>
         <TextInput style={styles.input} placeholder={'Username'} spellCheck={false} onChangeText={text => setUsername(text)} value={username} ></TextInput>
         {emailError.length> 0 && 
             <Text style={styles.errorText}>{emailError}</Text>
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   },
     hero: {
         justifyContent:'center',
-        marginBottom:100,
+        marginBottom:70,
         width:170,
         height:180,
         padding:10,
@@ -159,5 +159,12 @@ const styles = StyleSheet.create({
         padding:2,
         alignContent:'space-between',
         justifyContent:'space-between',
+    }, 
+    title: {
+        fontSize:25,
+        color: '#ffff',
+        margin:10,
+        marginBottom:30,
+        padding:10,
     }
   });
