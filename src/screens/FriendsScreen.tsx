@@ -13,7 +13,7 @@ const FriendsScreen = () => {
         screenOptions={{
             tabBarLabelStyle: { fontSize: 12 },
             tabBarItemStyle: { width: 200 },
-            tabBarStyle: { backgroundColor: 'powderblue',opacity:0.5},
+            tabBarStyle: { backgroundColor: '#7879F1',opacity:0.5},
             
     tabBarBackground: () => (
         <BlurView tint="light" intensity={100} style={StyleSheet.absoluteFill} />

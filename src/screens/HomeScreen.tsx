@@ -8,7 +8,17 @@ const Tab = createMaterialTopTabNavigator();
 const HomeScreen = () => {
   return (
     <View style={styles.topNavBar}>
-      <Tab.Navigator>
+      <Tab.Navigator
+        
+        screenOptions={{
+          tabBarLabelStyle: { fontSize: 12,color:'white',fontWeight:'bold',fontStyle:'italic' },
+          tabBarItemStyle: { width: 200},
+          tabBarStyle: { backgroundColor: '#A5A6F6',opacity:0.5},
+          tabBarPressColor:'#7879F1',
+          tabBarPressOpacity:1,
+          
+        }}
+      >
         <Tab.Screen name='Friends' component={FriendsScreen} />
         <Tab.Screen name='Communications' component={ChatListScreen} />
       </Tab.Navigator>

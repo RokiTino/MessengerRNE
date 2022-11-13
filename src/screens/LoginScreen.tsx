@@ -81,20 +81,20 @@ const handleSubmit = () => {
 }
 const styles = StyleSheet.create({
     inlign:{
-        marginHorizontal:0,
-        marginTop:50,
-        paddingHorizontal:0,
-        paddingVertical:0,
-        justifyContent:'space-between',
-        alignItems:'stretch',
-        display:'flex',
-        flex:0,
+        width: '100%',
+        height: 50,
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'absolute', //Here is the trick
+        bottom: 0,
     },
     register: {
         flex:0,
         color:'#7879F1',
         height:18,
         width:106,
+        alignContent:'center',
+        justifyContent:'center',
     },
   background: {
     position: 'absolute',
@@ -105,7 +105,8 @@ const styles = StyleSheet.create({
   },
     hero: {
         justifyContent:'center',
-        marginBottom:70,
+        marginTop:20,
+        marginBottom:35,
         width:170,
         height:180,
         padding:10,
@@ -164,7 +165,7 @@ const styles = StyleSheet.create({
         fontSize:25,
         color: '#ffff',
         margin:10,
-        marginBottom:30,
+        marginBottom:25,
         padding:10,
     }
   });
